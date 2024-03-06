@@ -21,3 +21,7 @@ func _on_MasterVol_value_changed(value):
 		AudioServer.set_bus_mute(master_bus, true)
 	else:
 		AudioServer.set_bus_mute(master_bus, false)
+
+
+func _on_Quit_pressed():
+	get_tree().quit()
